@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import s from './Modal.module.css';
 import PropTypes from 'prop-types';
-import Loader from 'components/Loader/Loader';
+// import Loader from 'components/Loader/Loader';
 
 
 const modalRoot = document.querySelector('#modalRoot');

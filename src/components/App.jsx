@@ -17,7 +17,7 @@ export default function App() {
   const [page, setPage] = useState(1);
   const [status, setStatus] = useState('idle');
   const [totalHits, setTotalHits] = useState(null);
-  const [error, setError] = useState('');
+  // const [error, setError] = useState('');
 
   useEffect(() => {
     if (query === '') {
@@ -41,7 +41,7 @@ export default function App() {
           return pics;
         })
         .catch(error => {
-          setError(error);
+          // setError(error);
           setStatus('rejected');
         });
     };
