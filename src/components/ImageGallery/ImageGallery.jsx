@@ -2,10 +2,7 @@ import { useEffect, useState } from 'react';
 import s from './ImageGallery.module.css';
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 import Modal from 'components/Modal/Modal';
-import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
-
-
 
 export default function ImageGallery({ images }) {
   const [showModal, setShowModal] = useState(false);
@@ -36,7 +33,7 @@ export default function ImageGallery({ images }) {
         {images.map(img => {
           return (
             <ImageGalleryItem
-              key={nanoid()}
+              key={img.id}
               smallImgURL={img.webformatURL}
               id={img.id}
             />
